@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>Augmented Radiance Field: A General Framework for Enhanced Gaussian Splatting</title>
+    <link rel="icon" type="image/x-icon" href="static/images/icon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Augmented Radiance Field: A General Framework for Enhanced Gaussian Splatting</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://github.com/XiaoXinyyx">Yixin Yang</a>,</span>
+                            <span class="author-block">
+                                <a href="https://bojianwu.github.io/">Bojian Wu</a>,</span>
+                            <span class="author-block">
+                                <a href="https://zhouyangvcc.github.io/">Yang Zhou</a><sup>*</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://vcc.tech/~huihuang">Hui Huang</a>,</span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">Visual Computing Research Center, CSSE, Shenzhen University</span>
+                            <br>
+                            <span class="author-block">Tencent Games</span>
+                            <span class="author-block">International Conference on Learning Representations 2026</span>
+                            <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+                            <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Abstract. -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Due to the real-time rendering performance, 3D Gaussian Splatting (3DGS) has emerged as the leading method for radiance
+                            field reconstruction. However, its reliance on spherical harmonics for color encoding inherently limits its ability to
+                            separate diffuse and specular components, making it challenging to accurately represent complex reflections. To address
+                            this, we propose a novel enhanced Gaussian kernel that explicitly models specular effects through view-dependent
+                            opacity. Meanwhile, we introduce an error-driven compensation strategy to improve rendering quality in existing 3DGS
+                            scenes. Our method begins with 2D Gaussian initialization and then adaptively inserts and optimizes enhanced Gaussian
+                            kernels, ultimately producing an \emph{augmented radiance field}. Experiments demonstrate that our method not only
+                            surpasses state-of-the-art NeRF methods in rendering performance but also achieves greater parameter efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Abstract. -->
+
+    Coming soon
+
+    <!-- Acknowledgements. -->
+    <!-- <section class="section"></section>
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Acknowledgements</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            This work was supported in parts by NSFC (U21B2023), ICFCRT (W2441020), 
+                            GD Basic and Applied Basic Research Foundation (2023B1515120026), 
+                            DEGP Innovation Team (2022KCXTD025), SZU Teaching Reform Key Program (JG2024018), 
+                            and Scientific Development Funds from Shenzhen University.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--/ Acknowledgements. -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                        <p>
+                            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" 
+                            target="_blank">Academic Project Page Template</a> which was adopted from the&nbsp;<a href="https://nerfies.github.io" target="_blank">Nerfies</a>&nbsp; project page.
+                            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer.              
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>
