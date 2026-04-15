@@ -62,6 +62,28 @@ $(document).ready(function () {
             top: "static/images/counter_proj.png"
         },
     }
+
+    
+    function preloadTripleCompareImages(data) {
+        const urls = new Set();
+
+        Object.values(data).forEach(item => {
+            urls.add(item.base);
+            urls.add(item.mid);
+            urls.add(item.top);
+        });
+
+        urls.forEach(url => {
+            const img = new Image();
+            img.src = url;
+        });
+    }
+    window.addEventListener("load", () => {
+        preloadTripleCompareImages(scenes);
+        preloadTripleCompareImages(scenes_dc)
+    });
+
+
     const imgBase = document.getElementById("img-base");
     const imgMid = document.getElementById("img-mid");
     const imgTop = document.getElementById("img-top");
