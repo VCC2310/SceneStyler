@@ -63,7 +63,7 @@ $(document).ready(function () {
         },
     }
 
-    
+    // 预加载对比图像
     function preloadTripleCompareImages(data) {
         const urls = new Set();
 
