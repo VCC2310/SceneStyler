@@ -266,3 +266,10 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+.video-caption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
