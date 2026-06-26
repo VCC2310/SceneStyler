@@ -107,7 +107,7 @@
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
-              <video autoplay controls muted loop height="100%" preload="metadata">
+              <video autoplay controls loop height="100%" preload="metadata">
                 <source src="static/videos/video_0.mp4" type="video/mp4">
               </video>
             </div>
@@ -144,7 +144,7 @@
                             In the reconstruction stage, we optimize the 3D Gaussians using estimated depth as geometric constraints to 
                             achieve more accurate scene reconstruction. Meanwhile, we regularize the scale and shape of the primitives to 
                             better represent stylized textures later. Then, in the stylization stage, we introduce a <b>Capacity-Controlled 
-                            Feature Transport (CCFT) loss</b> and <b>cross-view matching guidance</b> to obtain coherent stylized views. With a content 
+                            Feature Transport (CCFT) loss</b> and <b>Cross-View Matching Guidance</b> to obtain coherent stylized views. With a content 
                             loss that preserves scene structure, we update the color parameters of 3D Gaussians, yielding the final stylized 3D scene.
                         </p>
                     </div>
@@ -159,10 +159,10 @@
                     <h2 class="title is-4" style="margin-top: 2.5rem;">Capacity-Controlled Feature Transport</h2>
                     <div class="content has-text-justified">
                         <p>
-                            Inspired by classical Phong shading, we model view-dependent opacity with a cosine weighted function whose shape is
-                            controlled by two parameters: β, which governs the lobe’s sharpness, and T, which determines its angular extent. Along
-                            with the central orientation of the lobe, each new kernel introduces 5 learnable parameters to a standard Gaussian
-                            primitive.
+                            The capacity of each style feature is represented by the size of its node, with larger nodes indicating greater capacity. 
+                            <b>(a) When there's no capacity constraint,</b> multiple rendering features are mapped to the same style feature, 
+                            and matching degrades to nearest-neighbor search, resulting in the many-to-one issue. <b>(b) With capacity control,</b> 
+                            the matching of each style feature tends to be equalized, and more style features are utilized.
                         </p>
                     </div>
                     <div class="method-image" style="text-align: center;">
